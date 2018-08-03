@@ -1,0 +1,26 @@
+{
+  "name": "electron-react-core-app",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "electron": "electron .",
+    "electron-dev": "export DEV=true && electron .",
+    "package-osx": "npm run build && electron-packager . --platform=darwin --arch=x64 --out=dist --overwrite",
+    "package-win": "npm run build && electron-packager . --platform=win32 --arch=x64 --out=dist --overwrite"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "react": "^16.4.2",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.4.2",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^1.0.14",
+    "styled-components": "^3.4.0"
+  },
+  "devDependencies": {
+    "electron": "^3.0.0-beta.4",
+    "electron-packager": "^11.0.1"
+  }
+}
